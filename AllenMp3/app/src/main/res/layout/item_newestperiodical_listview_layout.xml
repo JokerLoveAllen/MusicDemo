@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:paddingBottom="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:background="@color/stateBar"
+                android:id="@+id/NPeriodicalTopicImage"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="260dp" />
+            <RelativeLayout
+                android:background="@drawable/vols_background_style"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="17dp"
+                android:layout_width="35dp"
+                android:layout_height="39dp">
+                <LinearLayout
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textSize="13sp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:text="vol."
+                        android:layout_width="wrap_content"
+                        android:layout_height="14dp" />
+                    <TextView
+                        android:textSize="13sp"
+                        android:id="@+id/NPeriodicalVols"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:text="806"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@color/white"
+            android:paddingTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <TextView
+                android:id="@+id/NPeriodicalTitle"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="时间里的静悄悄"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/NPeriodicalTitle"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/NPeriodicalFav"
+                    android:gravity="center"
+                    android:drawableLeft="@mipmap/vol_new_list_fav_n"
+                    android:text="283"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/NPeriodicalComm"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:drawableLeft="@mipmap/vol_new_list_comm_n"
+                    android:text="283"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+        <View
+            android:background="@color/dividerText"
+            android:layout_width="match_parent"
+            android:layout_height="1.5px"/>
+    </LinearLayout>

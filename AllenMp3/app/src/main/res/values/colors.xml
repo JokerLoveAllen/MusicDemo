@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#393939</color>
+    <color name="colorPrimaryDark">#393939</color>
+    <color name="colorAccent">#DC595F</color>
+    <color name="stateBar">#757575</color>
+    <color name="titleText">#DC595F</color>
+    <color name="discoverListViewBackground">#F0EFED</color>
+    <color name="dateBackground">#F6F6F6</color>
+    <color name="recommendSongBackground">#F7F7F7</color>
+    <color name="activityListViewBackground">#F4F4F4</color>
+    <color name="topicListViewBackground">#F2F2F2</color>
+    <color name="contentText">#393939</color>
+    <color name="elseText">#999999</color>
+    <color name="dividerText">#dddddd</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="menuBackground">#1A1A1A</color>
+    <color name="isFollow">#B4B4B4</color>
+    <color name="transparent">#00000000</color>
+</resources>

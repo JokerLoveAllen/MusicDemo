@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:id="@+id/PeriodicalLinear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/PeriodicalMore"
+            android:background="@color/white"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <View
+                android:layout_centerVertical="true"
+                android:background="@color/titleText"
+                android:layout_width="3dp"
+                android:layout_height="18dp" />
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="音乐期刊"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/More"
+                android:layout_centerInParent="true"
+                android:layout_alignParentEnd="true"
+                android:src="@mipmap/thank_user_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_toLeftOf="@id/More"
+                android:layout_centerInParent="true"
+                android:textSize="14sp"
+                android:text="全部"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="@color/stateBar"
+                    android:id="@+id/PeriodicalTopicImage"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp" />
+                <RelativeLayout
+                    android:background="@drawable/vols_background_style"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_width="35dp"
+                    android:layout_height="37dp">
+                    <LinearLayout
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textSize="13sp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/white"
+                            android:text="vol."
+                            android:layout_width="wrap_content"
+                            android:layout_height="14dp" />
+                        <TextView
+                            android:textSize="13sp"
+                            android:id="@+id/PeriodicalVols"
+                            android:layout_gravity="center"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:paddingTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <TextView
+                    android:id="@+id/PeriodicalTitle"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/PeriodicalTitle"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/PeriodicalFav"
+                        android:gravity="center"
+                        android:drawableLeft="@mipmap/vol_new_list_fav_n"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:background="@color/dividerText"
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"/>
+</LinearLayout>

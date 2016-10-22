@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/discoverListViewBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="17sp"
+                android:text="原创歌手"
+                android:textColor="@color/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:scaleType="centerInside"
+            android:id="@+id/PreArrow"
+            android:src="@mipmap/top_bar_back"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_width="25dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:layout_width="80dp"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.joker.allenmp3.util.RefreshLayout
+            android:id="@+id/NpSwipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:scrollbars="none"
+                android:id="@+id/NPeriodicalListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+        </com.joker.allenmp3.util.RefreshLayout>
+        <ImageView
+            android:background="@color/white"
+            android:id="@+id/Loading"
+            android:scaleType="center"
+            android:src="@drawable/loading_anim"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>

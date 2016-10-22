@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#e4e3e3"
+    android:layout_height="match_parent">
+<com.joker.allenmp3.view.RoundImageView
+    android:layout_width="54dp"
+    android:layout_height="54dp"
+    android:scaleType="fitCenter"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:id="@+id/round" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/title"
+    android:text="这是歌曲名字"
+    android:textColor="#414040"
+    android:gravity="center_horizontal"
+    android:maxLines="1"
+    android:ellipsize="end"
+    android:textSize="16sp"
+    android:layout_alignTop="@+id/round"
+    android:layout_toEndOf="@+id/round" />
+<TextView
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/author"
+    android:text="作者"
+    android:textColor="#414040"
+    android:maxLines="1"
+    android:ellipsize="end"
+    android:textSize="14sp"
+    android:layout_alignBottom="@+id/round"
+    android:layout_alignStart="@+id/title" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/time"
+    android:text="时间"
+    android:textColor="#414040"
+    android:textSize="14sp"
+    android:layout_alignBottom="@+id/round"
+    android:layout_alignParentEnd="true" />
+</RelativeLayout>

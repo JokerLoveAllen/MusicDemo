@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.joker.allenmp3">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 允许程序读取或写入系统设置 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/musicheader"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <activity
+            android:name=".ShowMusicActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".ShowListActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".service.mediaPlayerService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".banner.WebViewActivity" />
+        <activity android:name=".inneractivity.NewsRecommendationActivity" />
+        <activity android:name=".inneractivity.NewestPeriodicalActivity" />
+        <activity android:name=".inneractivity.FormHotInfoActivity" />
+
+        <service
+            android:name=".service.WebMusicService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name=".inneractivity.WebMusicActvity"></activity>
+    </application>
+
+</manifest>

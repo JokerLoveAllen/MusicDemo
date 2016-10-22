@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/RecommMore"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/RecommendMore"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <View
+            android:layout_centerVertical="true"
+            android:background="@color/titleText"
+            android:layout_width="3dp"
+            android:layout_height="18dp" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:text="原创推荐"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/More"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/thank_user_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_toLeftOf="@id/More"
+            android:layout_centerInParent="true"
+            android:textSize="14sp"
+            android:text="全部"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <include layout="@layout/item_recommendation_gridview_layout"/>
+
+    <View
+        android:background="@color/dividerText"
+        android:layout_width="match_parent"
+        android:layout_height="1.5px"/>
+</LinearLayout>
